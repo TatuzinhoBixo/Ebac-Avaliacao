@@ -7,7 +7,7 @@
 
 html {
     overflow-x: hidden;
-    background: #B2A8C3;
+    background: #B7C7FF;
 }
 
 .container {
@@ -17,7 +17,7 @@ html {
 }
 
 header, footer {
-    background-color: #AD13A7;
+    background-color: #1C3BAD;
     color: #fff;
     padding-top: 16px;
 }
@@ -43,7 +43,7 @@ footer > .container {
 }
 
 nav {
-    background-color: #7E13AD;
+    background-color: #4169FA;
     padding: 16px 0;
     display: none;
 }
@@ -84,7 +84,7 @@ nav li a {
 }
 
 #sobre-abrigo img {
-    max-width: 450px;
+    max-width: 300px;
     margin-right: 24px;
 }
 
@@ -99,20 +99,20 @@ nav li a {
 }
 
 section {
-    padding: 48px 0;
+    padding: 40px 0;
 }
 
 section h2 {
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 .lista-adocao {
-    flex-wrap: wrap;  //se o espaço não for o suficiente, os items são quebrados em uma linha horizontal
+    flex-wrap: wrap;
 }
 
 .lista-adocao li {
     list-style: none;
-    max-width: 20%;
+    max-width: 30%;
     margin-bottom: 24px;
 }
 
@@ -135,7 +135,7 @@ section h2 {
 
 button {
     display: block;
-    width: 90%;
+    width: 50%;
     border: none;
     padding: 6px;
     background-color: #119750;
@@ -147,31 +147,6 @@ button {
     border-radius: 6px;
 }
 
-.form-campo {
-    margin-bottom: 14px;
-}
-
-.form-campo {
-    font-width: bold;
-    display: block;
-}
-
-.form-campo input,
-.form-campo textarea {
-    width: 100%;
-    display: block;
-    padding: 6px;
-}
-
-.form-campo textarea {
-    resize: none;
-    height: 120px;
-}
-
-form {
-    max-width: 360px;
-}
-
 footer li {
     list-style: none;
     margin-left: 16px;
@@ -181,4 +156,97 @@ footer li {
 footer li img {
     height: 32px;
 }
+
+@media screen and (max-width: 640px) {
+    header h1 {
+        font-size: 26px; /*tamanho do título */
+        margin-left: 16px; /*margem do título */
+    }
+    
+    header > .container,
+    footer > .container {
+    padding-bottom: 8px; /*tamanho a baixo da caixa de fundo do título*/
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .hamburguer {
+        width: 16px; /*comprimento hamburger */
+    }
+    
+    .hamburguer span {
+        margin-bottom: 5px; /* margem entre os hamburguers */
+    }    
+
+    nav {
+        padding: 6px 0; /*tamanho do spam */
+        }
+
+    nav li {
+        margin-left: 14px; /*margem da esquerda do span */
+        font-size: 10px; /*tamanho fonte spam */
+    }
+
+    #sobre-abrigo img {
+        margin-left: 2px;  /*margem da figura do site */
+        margin-right: 4px;   /*ajuste da margem direita para a figura */
+    }
+
+    #sobre-abrigo h2 {
+        font-size: 24px; /*Título do texto*/
+    } 
+
+    #sobre-abrigo p {
+        font-size: 16px; /*texto página*/
+        margin-left: 10px; /*margem do texto*/
+    }
+
+    section {
+        padding: 20px 0; /*espaçamento entre a imagem principal e o header */
+    }
+
+    section h2 {
+        margin-bottom: 16px;  /* margem do título texto para o texto */
+        margin-left: 10px;   /*margem do texto*/
+        font-size: 20px; /* tamanho da fonte no destaque do mês */
+        margin-bottom: 6px; /*margem do destaque do mes para as fotos*/
+    }
+
+    .lista-adocao li {
+        list-style: none;  /*tira a marcação do li*/
+        max-width: 100%;
+        margin-bottom: 24px; /*margem da figura adoção para a proxima foto */
+        margin-left: 10px;
+    }
+
+    .lista-adocao li h3 {
+        margin: 3px 0; /*margim nome dos bixos */
+        font-size: 18px; /*fonte do nome dos bixos */
+    }
+
+    .lista-adocao p {
+        margin-bottom: 4px; /*margem da descrição para o botão */
+    }
+
+    button {
+        width: 70%; /*proporção do tamanho do botão com a figura*/
+        padding: 4px; /*largura do botão */
+        font-size: 16px;
+    }
+   
+    footer li {
+        margin-left: 16px;
+    }
+
+    footer li img {
+        height: 20px;
+    }
+
+    footer p {
+        margin-left: 16px;
+    }
+   
+
 
