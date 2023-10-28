@@ -157,6 +157,101 @@ footer li img {
     height: 32px;
 }
 
+@media (min-width: 641px) and (max-width: 1023px){
+    header h1 {
+        font-size: 32px; /*tamanho do título */
+        margin-left: 16px; /*margem do título */
+    }
+    
+    header > .container,
+    footer > .container {
+    padding-bottom: 12px; /*tamanho a baixo da caixa de fundo do título*/
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .hamburguer {
+        width: 24px; /*comprimento hamburger */
+    }
+    
+    .hamburguer span {
+        margin-bottom: 4px; /* margem entre os hamburguers */
+    }    
+
+    nav {
+        padding: 12px 0; /*tamanho do spam */
+        }
+
+    nav li {
+        margin-left: 14px; /*margem da esquerda do span */
+        font-size: 12px; /*tamanho fonte spam */
+    }
+
+    #sobre-abrigo img {
+        margin-left: 6px;  /*margem da figura do site */
+        margin-right: 4px;   /*ajuste da margem direita para a figura */
+    }
+
+    #sobre-abrigo h2 {
+        font-size: 32px; /*Título do texto*/
+    } 
+
+    #sobre-abrigo p {
+        margin-left: 10px; /*margem do texto*/
+        margin-right: 16px;
+    }
+
+    section {
+        padding: 32px 0; /*espaçamento entre a imagem principal e o header */
+    }
+
+    section h2 {
+        margin-bottom: 16px;  /* margem do título texto para o texto */
+        margin-left: 10px;   /*margem do texto*/
+        font-size: 20px; /* tamanho da fonte no destaque do mês */
+        margin-bottom: 6px; /*margem do destaque do mes para as fotos*/
+    }
+
+    .lista-adocao li {
+        max-width: 46%;
+        margin-bottom: 24px; /*margem da figura adoção para a proxima foto */
+        margin-left: 10px;
+    }
+
+    .lista-adocao li h3 {
+        margin: 5px 0; /*margim nome dos bixos */
+        font-size: 18px; /*fonte do nome dos bixos */
+    }
+
+    .lista-adocao p {
+        margin-bottom: 6px; /*margem da descrição para o botão */
+    }
+
+    button {
+        width: 80%; /*proporção do tamanho do botão com a figura*/
+        padding: 6px; /*largura do botão */
+        font-size: 16px;
+    }
+   
+    footer li {
+        margin-left: 16px;
+    }
+
+    footer li img {
+        height: 26px;
+    }
+
+    footer p {
+        margin-left: 16px;
+    }
+
+    .item-central-tablet {
+        margin: 0 0%;
+    }
+}
+
 @media screen and (max-width: 640px) {
     header h1 {
         font-size: 26px; /*tamanho do título */
@@ -247,6 +342,6 @@ footer li img {
     footer p {
         margin-left: 16px;
     }
-   
+}  
 
 
