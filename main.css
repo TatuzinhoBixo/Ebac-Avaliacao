@@ -2,69 +2,38 @@
    em botão
    vw letras*/
 
-* {     /* padrao */  
-    font-family: 'Inconsolata', monospace;
+* {  /*Reset das configurações */
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    align-items: center;
-    background-image: url('img/background.jpg');
-    background-size: cover;
+    background-image: url('img/bkg.jpg');
+}
+
+time {
+    display: block;
 }
 
 header {
-    display: flex; /* faz com que aumente a barra do titulo*/
-    justify-content: center;  /*coloca o titulo no meio */
+    background-color: #CFCFB0;
     position: sticky;
-    font-size: 2vw;
-    font-weight: bold;
-    background-color: #4839DB;
-    margin: -3vh;
-    height: 13vh;
+    top: 0;
+    left:0;
+    z-index: 1;
 }
 
-.container {
-    width: 100%
-    margin: 0 auto;
+.titulo-texto {
+    margin-left: 10vh;
+    color: #CFCFB0;
 }
 
-.container-flex {
-    display: flex;
+.sub-titulo {
+    margin-top: 3vh;
+    margin-bottom: 2vh;
 }
 
-form {
-    display: grid;
-    grid-template-rows: repeat(3, auto);
-    justify-content: center;
-}
-
-form input {
-    font-size: 1.5vw;
-    background-color: #ffff;
-    margin-top: -1.8vh;
-    border: none;
-    height: 4vh;
-}
-
-form h2:first-of-type {
-    margin-top: 14vh;
-}
-
-form h2 {
-    margin-top: 2vh;
-}
-
-form button {
-    background-color: #32AFE6;
-    font-size: 1.5vw; 
-    font-weight: bold;
-    cursor: pointer; 
-    padding: 1vh;
-    margin-top: 4vh;
-    height: 5vh;
-    border: none;
-    font-size: 1.6vw;
-    cursor: pointer;
-    border-radius: 1vh;
+.news {
+    margin-bottom: 3vh;
 }
