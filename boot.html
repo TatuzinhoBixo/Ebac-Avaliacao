@@ -6,7 +6,7 @@
     <title>Ligth-Car Iluminação Automotiva</title>
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
     <style>
-        .navbar-nav .nav-link.active {
+        .navbar-nav .nav-link {
             color: #fff;
         }
 
@@ -18,44 +18,125 @@
             position: sticky;
             top: 0;
             left: 0;
+            z-index: 1000;
         }
+
+        .carousel-fotos {
+            max-width: 1280px;
+            max-height: 500px;
+            margin: 0 auto;
+            display: blcok;
+        }
+
+        .custon-card {
+            border: none;
+        }
+
+        .custon-card img {
+            max-width: 100px;
+            max-height: 100px;
+            margin: 0 auto;
+            display: blcok;
+        }
+
     </style>
 </head>
 <body>
     <header id="cabecalho">
-        <!-- inicio do titulo responsivo -->
-        <div class="navbar navbar-expand-lg">
-            <div class="container">
-                <h1>Ligth</h1>
-            <!-- botão hamburger     -->
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Items do Menu -->
-            <nav class="collapse navbar-collapse justify-content-end" id="menu">
-                <ul class="nav navbar-nav nav-pills">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#inicio">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#novidades">Novidades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#produtos">Produtos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#promocoes">Promoções</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sobre">Sobre a loja</a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- botão do login -->
-            <button id="btn-login" class="btn btn-danger" type="button">Login</button>
+        <div class="navbar navbar-expand-lg bg-dark border-body bg-body-tertiary" data-bs-theme="dark">
+            <div class="container" style="color: #fff;">
+                <img src="./img/lampada.jpg" alt="Bootstrap" width="90" height="72">
+                <h1 style="margin-left: 2vh;">Lumiauto Shop</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id=""menu>
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#novidades">Novidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#promocoes">Promoções</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre a loja</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button id="btn-login" class="btn btn-danger" type="button">Login</button>
             </div>
         </div>
     </header>
+
+        <div class="container" style="margin-top: 5vh;">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner carousel-fotos">
+              <div data-bs-interval="3000" class="carousel-item active">
+                <img src="./img/farol4.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div data-bs-interval="3000" class="carousel-item">
+                <img src="/img/farol1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div data-bs-interval="3000" class="carousel-item">
+                <img src="/img/farol3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+              <span class="visually-hidden ">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <article class="card custon-card">
+                            <header class="card-header">
+                                <h2>PROMOÇÃO LUZES DE NATAL</h2>
+                            </header>
+                        </article>
+                    </div>
+                </div>    
+                    <div class="row">
+                        <div class="col-md-4">
+                            <article class="card custon-card text-bg-dark">
+                                <img src="./img/lamp1.jpg" alt="">
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title">Lampadas de Led H1</h4>
+                                </div>
+                                
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article class="card custon-card text-bg-dark">
+                                <div class="card-body">
+                                    <h4 class="card-title">Lampadas de Led H1</h4>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article class="card custon-card text-bg-dark">
+                                <div class="card-body">
+                                    <h4 class="card-title">Lampadas de Led H1</h4>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+
     <script src="./lib/bootstrap.bundle.min.js"></script>
 </body>
 </html>
