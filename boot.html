@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +25,7 @@
             max-width: 1280px;
             max-height: 500px;
             margin: 0 auto;
-            display: blcok;
+            display: block;
         }
 
         .custon-card {
@@ -36,7 +36,7 @@
             max-width: 140px;
             max-height: 140px;
             margin: 0 auto;
-            display: blcok;
+            display: block;
         }
 
         .card-titulo {
@@ -60,8 +60,8 @@
         }
 
         .social-icon {
-             margin-right: 4vh;
-             width: 3vw;
+             margin-right: 3vh;
+             width: 2vw;
         }
 
     </style>
@@ -71,11 +71,11 @@
         <div class="navbar navbar-expand-lg bg-dark border-body bg-body-tertiary" data-bs-theme="dark">
             <div class="container" style="color: #fff;">
                 <img src="./img/lampada.png" alt="Bootstrap" width="90" height="72">
-                <h1 style="margin-left: 2vh;">Lumiauto Shop</h1>
+                    <h1 style="margin-left: 2vh;">Lumiauto Shop</h1>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <nav class="collapse navbar-collapse justify-content-end" id=""menu>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
                     <ul class="nav navbar-nav nav-pills">
                         <li class="nav-item">
                             <a class="nav-link active" href="#inicio">Início</a>
@@ -99,158 +99,185 @@
         </div>
     </header>
 
-    <div class="container" style="margin-top: 3vh;">
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner carousel-fotos">
-            <div data-bs-interval="3000" class="carousel-item active">
-            <img src="./img/farol4.jpg" class="d-block w-100" alt="...">
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="inicio">
+            <div class="container" style="margin-top: 3vh;">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner carousel-fotos">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                        <img src="./img/farol4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                        <img src="./img/farol1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                        <img src="./img/farol3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                        <span class="visually-hidden ">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
-            <div data-bs-interval="3000" class="carousel-item">
-            <img src="/img/farol1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div data-bs-interval="3000" class="carousel-item">
-            <img src="/img/farol3.jpg" class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-            <span class="visually-hidden ">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-        </div>
-    </div>
-    <p></p>
-    <div class="container">
+        </section>    
+
+        <p></p>
+
+        <div class="container">
+            <section id="novidades">
+                <div class="row">
+                    <div class="col-12">
+                        <article class="card custon-card text-bg-danger">
+                            <header class="card-header border border-0">
+                                <h2>PROMOÇÃO LUZES DE NATAL</h2>
+                            </header>
+                        </article>
+                    </div>
+                </div>
+            </section> 
+
+            <p></p>
+            <p></p>
+
             <div class="row">
-                <div class="col-12">
-                    <article class="card custon-card text-bg-danger">
-                        <header class="card-header border border-0">
-                            <h2>PROMOÇÃO LUZES DE NATAL</h2>
+                <div class="col-lg-4 col-md-6 card-margem-botton">
+                    <article class="card custon-card border border-dark">
+                        <header class="card-header card-titulo text-bg-dark rounded-botton">
+                            <h4 class="text-center">Lâmpadas de Led H1</h4>
                         </header>
+                        <div class="card-body d-flex align-items-center btn btn-light">
+                            <div class="col-md-4">
+                                <img src="./img/lamp1.jpg" class="img-fluid">
+                            </div>
+                            <div class="align-items-center text-img">
+                                <p><h4>Marca: OSRAM</h4></p>
+                                <p><h4 class="fs-6">Modelo: OSRAM</h4></p>
+                                <p><h4 class="text-danger fs-2">R$: 299,99</h4></p>
+                                <button type="submit" class="btn btn-outline-success">Compre</button>
+                            </div>                                   
+                        </div>
                     </article>
                 </div>
+                <div class="col-lg-4 col-md-6">
+                    <article class="card custon-card border border-dark">
+                        <header class="card-header card-titulo text-bg-dark rounded-botton">
+                            <h4 class="text-center">Lâmpadas de Led H1</h4>
+                        </header>
+                        <div class="card-body d-flex align-items-center btn btn-light">
+                            <div class="col-md-4">
+                                <img src="./img/lamp1.jpg" class="img-fluid">
+                            </div>
+                            <div class="align-items-center text-img">
+                                <p><h4>Marca: OSRAM</h4></p>
+                                <p><h4 class="fs-6">Modelo: OSRAM</h4></p>
+                                <p><h4 class="text-danger fs-2">R$: 299,99</h4></p>
+                                <button type="submit" class="btn btn-outline-success">Compre</button>
+                            </div>                                   
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <article class="card custon-card border border-dark">
+                        <header class="card-header card-titulo text-bg-dark rounded-botton">
+                            <h4 class="text-center">Lâmpadas de Led H1</h4>
+                        </header>
+                        <div class="card-body d-flex align-items-center btn btn-light">
+                            <div class="col-md-4">
+                                <img src="./img/lamp1.jpg" class="img-fluid">
+                            </div>
+                            <div class="align-items-center text-img">
+                                <p><h4>Marca: OSRAM</h4></p>
+                                <p><h4 class="fs-6">Modelo: OSRAM</h4></p>
+                                <p><h4 class="text-danger fs-2">R$: 299,99</h4></p>
+                                <button type="submit" class="btn btn-outline-success">Compre</button>
+                            </div>                                   
+                        </div>
+                    </article>
+                </div>        
             </div>
-            <p></p>
-            <p></p>    
+
+            <section id="produtos">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 card-margem-botton">
-                        <article class="card custon-card border border-dark">
-                            <header class="card-header card-titulo text-bg-dark rounded-botton">
-                                <h4 class="text-center">Lâmpadas de Led H1</h4>
+                    <div class="col-12">
+                        <article class="card custon-card text-bg-danger">
+                            <header class="card-header border border-0">
+                                <h2>PRODUTOS</h2>
                             </header>
-                            <div class="card-body d-flex align-items-center btn btn-light">
-                                    <div class="col-md-4">
-                                        <img src="./img/lamp1.jpg" class="img-fluid">
-                                    </div>
-                                    <div class="align-items-center text-img">
-                                        <p><h4>Marca: OSRAM</h4></p>
-                                        <p><h4 class="fs-6">Modelo: OSRAM</h4></p>
-                                        <p><h4 class="text-danger fs-2">R$: 299,99</h4></p>
-                                        <button type="submit" class="btn btn-outline-success">Compre</button>
-                                    </div>                                   
-                            </div>
                         </article>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <article class="card custon-card border border-dark">
-                            <header class="card-header card-titulo text-bg-dark rounded-botton">
-                                <h4 class="text-center">Lâmpadas de Led H1</h4>
-                            </header>
-                            <div class="card-body d-flex align-items-center btn btn-light">
-                                    <div class="col-md-4">
-                                        <img src="./img/lamp1.jpg" class="img-fluid">
-                                    </div>
-                                    <div class="align-items-center text-img">
-                                        <p><h4>Marca: OSRAM</h4></p>
-                                        <p><h4 class="fs-6">Modelo: OSRAM</h4></p>
-                                        <p><h4 class="text-danger fs-2">R$: 299,99</h4></p>
-                                        <button type="submit" class="btn btn-outline-success">Compre</button>
-                                    </div>                                   
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <article class="card custon-card border border-dark">
-                            <header class="card-header card-titulo text-bg-dark rounded-botton">
-                                <h4 class="text-center">Lâmpadas de Led H1</h4>
-                            </header>
-                            <div class="card-body d-flex align-items-center btn btn-light">
-                                    <div class="col-md-4">
-                                        <img src="./img/lamp1.jpg" class="img-fluid">
-                                    </div>
-                                    <div class="align-items-center text-img">
-                                        <p><h4>Marca: OSRAM</h4></p>
-                                        <p><h4 class="fs-6">Modelo: OSRAM</h4></p>
-                                        <p><h4 class="text-danger fs-2">R$: 299,99</h4></p>
-                                        <button type="submit" class="btn btn-outline-success">Compre</button>
-                                    </div>                                   
-                            </div>
-                        </article>
-                    </div>
-                        </article>
-                        <div class="col-lg-4 col-md-6">
-                            <article class="card custon-card border border-dark">
-                                <header class="card-header card-titulo text-bg-dark rounded-botton">
-                                    <h4 class="text-center">Lâmpadas de Led H1</h4>
-                                </header>
-                                <div class="card-body d-flex align-items-center btn btn-light">
-                                        <div class="col-md-4">
-                                            <img src="./img/lamp1.jpg" class="img-fluid">
-                                        </div>
-                                        <div class="align-items-center text-img">
-                                            <p><h4>Marca: OSRAM</h4></p>
-                                            <p><h4 class="fs-6">Modelo: OSRAM</h4></p>
-                                            <p><h4 class="text-danger fs-2">R$: 299,99</h4></p>
-                                            <button type="submit" class="btn btn-outline-success">Compre</button>
-                                        </div>                                   
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <article class="card custon-card border border-dark">
-                                <header class="card-header card-titulo text-bg-dark rounded-botton">
-                                    <h4 class="text-center">Lâmpadas de Led H1</h4>
-                                </header>
-                                <div class="card-body d-flex align-items-center btn btn-light">
-                                        <div class="col-md-4">
-                                            <img src="./img/lamp1.jpg" class="img-fluid">
-                                        </div>
-                                        <div class="align-items-center text-img">
-                                            <p><h4>Marca: OSRAM</h4></p>
-                                            <p><h4 class="fs-6">Modelo: OSRAM</h4></p>
-                                            <p><h4 class="text-danger fs-2">R$: 299,99</h4></p>
-                                            <button type="submit" class="btn btn-outline-success">Compre</button>
-                                        </div>                                   
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <article class="card custon-card border border-dark">
-                                <header class="card-header card-titulo text-bg-dark rounded-botton">
-                                    <h4 class="text-center">Lâmpadas de Led H1</h4>
-                                </header>
-                                <div class="card-body d-flex align-items-center btn btn-light">
-                                        <div class="col-md-4">
-                                            <img src="./img/lamp1.jpg" class="img-fluid">
-                                        </div>
-                                        <div class="align-items-center text-img">
-                                            <p><h4>Marca: OSRAM</h4></p>
-                                            <p><h4 class="fs-6">Modelo: OSRAM</h4></p>
-                                            <p><h4 class="text-danger fs-2">R$: 299,99</h4></p>
-                                            <button type="submit" class="btn btn-outline-success">Compre</button>
-                                        </div>                                   
-                                </div>
-                            </article>
-                        </div>
                     </div>
                 </div>
+            </section> 
+            
+            <p></p>
+            <p></p>
+            
+            <div class="row">       
+                <div class="col-lg-4 col-md-6">
+                    <article class="card custon-card border border-dark">
+                        <header class="card-header card-titulo text-bg-dark rounded-botton">
+                            <h4 class="text-center">Lâmpadas de Led H4</h4>
+                        </header>
+                        <div class="card-body d-flex align-items-center btn btn-light">
+                            <div class="col-md-4">
+                                <img src="./img/lamp1.jpg" class="img-fluid">
+                            </div>
+                            <div class="align-items-center text-img">
+                                <p><h4>Marca: OSRAM</h4></p>
+                                <p><h4 class="fs-6">Modelo: OSRAM</h4></p>
+                                <p><h4 class="text-danger fs-2">R$: 299,99</h4></p>
+                                <button type="submit" class="btn btn-outline-success">Compre</button>
+                            </div>                                   
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <article class="card custon-card border border-dark">
+                        <header class="card-header card-titulo text-bg-dark rounded-botton">
+                            <h4 class="text-center">Lâmpadas de Led H4</h4>
+                        </header>
+                        <div class="card-body d-flex align-items-center btn btn-light">
+                            <div class="col-md-4">
+                                <img src="./img/lamp1.jpg" class="img-fluid">
+                            </div>
+                            <div class="align-items-center text-img">
+                                <p><h4>Marca: OSRAM</h4></p>
+                                <p><h4 class="fs-6">Modelo: OSRAM</h4></p>
+                                <p><h4 class="text-danger fs-2">R$: 299,99</h4></p>
+                                <button type="submit" class="btn btn-outline-success">Compre</button>
+                            </div>                                   
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <article class="card custon-card border border-dark">
+                        <header class="card-header card-titulo text-bg-dark rounded-botton">
+                            <h4 class="text-center">Lâmpadas de Led H4</h4>
+                        </header>
+                        <div class="card-body d-flex align-items-center btn btn-light">
+                            <div class="col-md-4">
+                                <img src="./img/lamp1.jpg" class="img-fluid">
+                            </div>
+                            <div class="align-items-center text-img">
+                                <p><h4>Marca: OSRAM</h4></p>
+                                <p><h4 class="fs-6">Modelo: OSRAM</h4></p>
+                                <p><h4 class="text-danger fs-2">R$: 299,99</h4></p>
+                                <button type="submit" class="btn btn-outline-success">Compre</button>
+                            </div>                                   
+                        </div>
+                    </article>
+                </div>    
+            </div> 
+        </div>                 
+    </div>
 
     <footer class="text-bg-dark navbar navbar-expand-lg rounded-bottom">
-        <p style="margin-left: 10vh; margin-top:1vh;">Siga nossas redes sociais</p>
-            <div class="ms-auto">
+        <p style="margin-left: 10vh; margin-top:6vh;"><h2>Siga nossas redes sociais</p></h2>
+            <div class="ms-auto" style="margin-top: -2vh;">
                 <a href="#"></a>
                     <img src="./img/facebook.png" class="social-icon img-fluid" alt="Facebook">
 
@@ -258,7 +285,7 @@
                     <img src="./img/instagram.png" class="social-icon img-fluid" alt="Instagram">
 
                 <a href="#"></a>
-                    <img src="./img/youtube.png" class="social-icon img-fluid" alt="Youtube" style="margin-right: 10vh;>          
+                    <img src="./img/youtube.png" class="social-icon img-fluid" alt="Youtube" style="margin-right: 10vh;">          
             </div>
     </footer>        
     <script src="./lib/bootstrap.bundle.min.js"></script>
