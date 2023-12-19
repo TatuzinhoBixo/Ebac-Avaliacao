@@ -1,0 +1,14 @@
+.navbar {
+    background: #8DC2EA;
+}
+
+.carousel-item {
+    max-width: 40%;
+    height: auto;
+}
+
+.login-links li {
+    list-style: none;
+    display: inline;
+}
+
