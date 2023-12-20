@@ -1,9 +1,13 @@
-.navbar {
-    background: #8DC2EA;
+#corpo {
+    background: #F2D0A7; 
 }
 
-.carousel-item {
-    max-width: 40%;
+.navbar {
+    background: #171559;
+}
+
+.carousel-item img {
+    max-width: 60%;
     height: auto;
 }
 
@@ -11,4 +15,3 @@
     list-style: none;
     display: inline;
 }
-
