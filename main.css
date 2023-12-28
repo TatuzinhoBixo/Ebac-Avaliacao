@@ -1,9 +1,13 @@
 *#corpo {
-    background: #F2D0A7; 
+    background: #43E664; 
 }
 
 .navbar {
-    background: #171559;
+    background: #615166;
+}
+
+.navbar-brand, .nav-link {
+    color: #fff;
 }
 
 .carousel-item img {
