@@ -1,9 +1,23 @@
-*#corpo {
-    background: #43E664; 
+body {
+    background: #2ACBEB;
+    font-family: Roboto, sans;
 }
 
 .navbar {
-    background: #615166;
+    background: #EA2B7A;
+}
+
+.nome-loja {
+    font-family: Sevillana;
+    color: #fff;
+    font-size: 6vh;
+
+}
+
+.sub-titulo {
+    font-family: Sevillana;
+    color: #000;
+    font-size: 3vh;
 }
 
 .navbar-brand, .nav-link {
@@ -13,6 +27,12 @@
 .carousel-item img {
     max-width: 60%;
     height: auto;
+}
+
+.sobre-loja {
+    font-size: 2vh;
+    font-size: italic;
+    font-weight: bold;
 }
 
 .login-links li {

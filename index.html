@@ -8,14 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Pacifico&family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Pacifico&family=Roboto:ital,wght@1,700&family=Sevillana&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header class="navbar navbar-expand-lg sticky-lg-top p-4" id="cabecalho">
         <div class="container">
-            <h1 class="navbar-brand m-0 section-title fs-1">
-                ComputerTech
+            <h1 class="navbar-brand m-0 section-title nome-loja">
+                Animabixo
             </h1>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
                 <span class="navbar-toggler-icon"></span>
@@ -23,43 +26,31 @@
             <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
                 <ul class="nav nav-pills d-block d-md-flex">
                     <li class="nav-item fw-bold">
-                        <a href="#sobre-o-pet" class="nav-link fs-6">
+                        <a href="#sobre-o-pet" class="nav-link fs-5">
                             <i class="bi bi-house-door me-1"></i>
-                            Cachorro
+                            Cães
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="#sobre-o-pet" class="nav-link fs-6">
+                        <a href="#sobre-o-pet" class="nav-link fs-5">
                             <i class="bi bi-house-door me-1"></i>
                             Gatos
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="#sobre-o-pet" class="nav-link fs-6">
+                        <a href="#sobre-o-pet" class="nav-link fs-5">
                             <i class="bi bi-house-door me-1"></i>
-                            Aves
+                            Outros Pets
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="#sobre-o-pet" class="nav-link fs-6">
+                        <a href="#sobre-o-pet" class="nav-link fs-5">
                             <i class="bi bi-house-door me-1"></i>
-                            Peixes
+                            Seus Pedidos
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="#sobre-o-pet" class="nav-link fs-6">
-                            <i class="bi bi-house-door me-1"></i>
-                            Roedores
-                        </a>
-                    </li>
-                    <li class="nav-item fw-bold">
-                        <a href="#sobre-o-pet" class="nav-link fs-6">
-                            <i class="bi bi-house-door me-1"></i>
-                            Pedidos
-                        </a>
-                    </li>
-                    <li class="nav-item fw-bold">
-                        <a href="#sobre-o-pet" class="nav-link fs-6">
+                        <a href="#sobre-o-pet" class="nav-link fs-5">
                             <i class="bi bi-house-door me-1"></i>
                             Login
                         </a>
@@ -73,13 +64,19 @@
             <div class="carousel slide" data-bs-ride="carousel" id="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item text-center active" data-bs-interval="10000">
-                        <img src="./imgs/slide1.jpg" class="mx-auto d-block" alt="">
+                        <img src="./imgs/slide/slide1-dog.jpg" class="mx-auto d-block rounded" alt="">
                     </div>
                     <div class="carousel-item"text-center  data-bs-interval="10000">
-                        <img src="./imgs/slide2.jpg" class="mx-auto d-block" alt="">
+                        <img src="./imgs/slide/slide2-cat.jpg" class="mx-auto d-block rounded" alt="">
                     </div>
                     <div class="carousel-item"text-center  data-bs-interval="10000">
-                        <img src="./imgs/slide3.jpg" class="mx-auto d-block" alt="">
+                        <img src="./imgs/slide/slide3-birds.jpg" class="mx-auto d-block rounded" alt="">
+                    </div>
+                    <div class="carousel-item"text-center  data-bs-interval="10000">
+                        <img src="./imgs/slide/slide4-fishs.jpg" class="mx-auto d-block rounded" alt="">
+                    </div>
+                    <div class="carousel-item"text-center  data-bs-interval="10000">
+                        <img src="./imgs/slide/slide5-rodent.jpg" class="mx-auto d-block rounded" alt="">
                     </div>
                 </div>
                 <div>
@@ -98,21 +95,23 @@
                     <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
                     <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
                     <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="4"></button>
                 </div>
             </div>
             <div class="pt-5 pb-5">
                 <div class="container">
+                    <div class="col-md-6 sobre-loja">
+                        <h2 class="section-title fs-1 mt-3 sub-titulo">Sobre nós</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, laboriosam ipsum libero dolorem maiores pariatur rerum deleniti sapiente minima nesciunt corporis cum, autem possimus distinctio magnam quod delectus commodi magni.</p>
+                    </div>
                     <div class="col-md-6">
                         <img src="./imgs/loja.jpg" class="d-block w-100 rounded" alt="Foto Fachada">
                     </div>
-                    <div class="col-md-7">
-                        <h2 class="section-title">Sobre o a loja</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, laboriosam ipsum libero dolorem maiores pariatur rerum deleniti sapiente minima nesciunt corporis cum, autem possimus distinctio magnam quod delectus commodi magni.</p>
-                    </div>
                     <h3>
-                        <div class="section-tile">Nossos serviços</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, beatae distinctio! Et minus quam reprehenderit maiores</p>
-                        <ul>
+                        <div class="section-tile fs-1 mt-3 sub-titulo">Nossos serviços</div>
+                        <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, beatae distinctio! Et minus quam reprehenderit maiores</p>
+                        <ul class="fs-4">
                             <li>
                                 Item 1
                             </li>
@@ -127,10 +126,11 @@
                 </div>
             </div>
         </section>
+        <section id="produtos" class="pt-3 pb-3"></section>        </section>
         <section id="especialidades">
             <div class="container">
                 <div class="row">
-                    <h2 class="section-title texte-center mb-5">
+                    <h2 class="section-title texte-center mb-3">
                         Nossas especialidades
                     </h2>
                 </div>
