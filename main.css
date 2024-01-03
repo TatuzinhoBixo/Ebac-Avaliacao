@@ -53,6 +53,18 @@ body {
     transform: translateY(-50%);
 }
 
-.tab-content .tab-pane .col-md-3 h3.text-custon{
+.text-custon{
     color: #2E6B5D;
+}
+
+.img-custon{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.list-unstyled {
+    list-style: none; /* Remove os marcadores */
+    padding: 0; /* Remove o espaçamento interno */
+    margin: 0; /* Remove o espaçamento externo */
 }
