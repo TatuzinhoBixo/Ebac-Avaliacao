@@ -1,5 +1,5 @@
 body {
-    background: #2ACBEB;
+    background: #CCEBE4;
     font-family: Roboto, sans;
 }
 
@@ -8,16 +8,17 @@ body {
 }
 
 .nome-loja {
-    font-family: Sevillana;
+    font-family: Kaushan Script;
     color: #fff;
     font-size: 6vh;
 
 }
 
 .sub-titulo {
-    font-family: Sevillana;
+    font-family: Marck Script;
     color: #000;
     font-size: 3vh;
+    font-style: bold
 }
 
 .navbar-brand, .nav-link {
@@ -50,4 +51,8 @@ body {
     left:70%;
     top:50%;
     transform: translateY(-50%);
+}
+
+.tab-content .tab-pane .col-md-3 h3.text-custon{
+    color: #2E6B5D;
 }
